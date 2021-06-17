@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box ;
+  
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Style the header */
+header {
+  background-color: rgb(37, 88, 16);
+  padding: 3px;
+  margin-block-end: 2%;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(247, 232, 35, 0.986);
+  
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+nav {
+  float: left;
+  width: 15%;
+  height: 450px; /* only for demonstration, should be removed */
+  margin-top: -30px;
+  background: rgb(54, 83, 76);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+
+
+
+
+article {
+
+
+
+  margin-block-end: 5px;
+  text-align: center;
+  border-radius: 100px;
+  border: 15px solid #0b0c0a;
+  background-color: #739278;
+  margin-right: 15%;
+  margin-left: 20%;
+  
+}
+
+
+
+/* Clear floats after the columns */
+section::after {
+  
+  content: "";
+  display: table;
+  clear: both;
+  
+  
+}
+
+/* Style the footer */
+footer {
+background-color: rgb(37, 88, 16);
+padding: 5px;
+font-size:25px;
+color: yellow;
+text-align: center;
+margin-block-end: auto;
+position:absolute;
+bottom:0;
+width:100%;
+}
+
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+
+  <h2>
+</a>Mundog</h2>
+
+</header>
+
+<section>
+     <nav>
+    <ul>
+      <li><a href="consulta" style="color: #FFFFFF">CONSULTAS</a></li></br>
+      <li><a href="/atendimento"style="color: #FFFFFF">ATENDIMENTO</a></li></br>
+      <li><a href="/vendas"style="color: #FFFFFF">VENDAS</a></li></br>
+      <li><a href="/"style="color: #FFFFFF">CADASTRO DE CLIENTES</a></li></br>
+      <li><a href="/cadastrofornecedor"style="color: #FFFFFF">CADASTRO DE FORNECEDORES</a></li></br>
+      <li><a href="/servicos"style="color: #FFFFFF">BANHO E TOSA</a></li></br>
+      <li><a href="compras" style="color: #FFFFFF">COMPRAS</a></li></br>
+    </ul>
+  </nav>
+  
+<footer>  
+ TUDO PARA SEU PET 
+</footer>
+
+
+  
+ 
+  <article>
+      
+    {{{body}}}
+
+
+  </article>
+
+</section>
+
+
+
+</body>
+</html>
